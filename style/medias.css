@@ -15,7 +15,7 @@
 
     #telaLogin {
         width: 80vw;
-        height: 400px;
+        height: 320px;
         background-color: white;
     }
 
@@ -40,10 +40,18 @@
     }
 
     form > input[type="submit"] {
-        background-color: #6bdb84;
+        background-color: var(--cor2);
+        color: var(--cor1);
+        border-color: none;
         width: 70%;
         height: 40px;
         font-size: 1.4em;
+    }
+
+    form > input[type="submit"]:hover {
+        background-color: #6bdb84;
+        color: var(--cor2);
+        border-color: none;
     }
 
     form > a {
@@ -61,7 +69,7 @@
 
     #telaLogin {
         width: 900px;
-        height: 400px;
+        height: 320px;
         background-color: white;
     }
 
@@ -86,14 +94,25 @@
     }
 
     form > input[type="submit"] {
-        background-color: #6bdb84;
+        background-color: var(--cor2);
+        color: var(--cor1);
         width: 70%;
         height: 40px;
         font-size: 1.4em;
     }
 
+    form > input[type="submit"]:hover {
+        background-color: #6bdb84;
+        color: var(--cor2);
+        border-color: none;
+    }
+
     form > a {
         background-color: white;
         font-size: 1.3em;
+    }
+
+    .areaForm > input {
+        transform: translateY(-13px);
     }
 }
