@@ -36,14 +36,23 @@ main {
 
     border-radius: 20px;
     background-color: var(--cor1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
     overflow: hidden;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 #telaLogin>#imagem {
+    display: block;
     background: var(--cor1) url(../images/pexels-miriam-espacio-2703478.jpg) no-repeat;
     background-size: cover;
     margin-bottom: 10px;
     height: 220px;
+}
+
+#telaLogin > #formulario {
+    display: block;
 }
 
 h1 {
