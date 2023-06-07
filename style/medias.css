@@ -111,8 +111,4 @@
         background-color: white;
         font-size: 1.3em;
     }
-
-    .areaForm > input {
-        transform: translateY(-13px);
-    }
 }
