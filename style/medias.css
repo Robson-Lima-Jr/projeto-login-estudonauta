@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #6bdb84;
+    --cor2: #552ca0;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    html , body {
+        background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    }
+
+    #telaLogin {
+        width: 80vw;
+        height: 400px;
+        background-color: white;
+    }
+
+    #telaLogin>#imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    #telaLogin>#formulario {
+        float: right;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html, body {
+        background-image: linear-gradient(to left, var(--cor1), var(--cor2));
+    }
+
+    #telaLogin {
+        width: 900px;
+        height: 400px;
+        background-color: white;
+    }
+
+    #telaLogin > #imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #telaLogin > #formulario {
+        float: left;
+        width: 50%;
+    }
+}
