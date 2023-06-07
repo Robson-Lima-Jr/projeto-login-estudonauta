@@ -1,7 +1,7 @@
 @charset "Utf-8";
 
 :root {
-    --cor1: #6bdb84;
+    --cor1: #4da560;
     --cor2: #552ca0;
 }
 
@@ -30,7 +30,6 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 300px;
     height: 500px;
 
@@ -39,6 +38,7 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
     overflow: hidden;
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -51,41 +51,93 @@ main {
     height: 220px;
 }
 
-#telaLogin > #formulario {
+form {
+    padding: 0px 10px;
+}
+
+#telaLogin>#formulario {
     display: block;
 }
 
-h1 {
+#formulario>h1 {
     text-align: center;
+    font-size: 1.8em;
     color: var(--cor2);
 }
 
-div>p {
+#formulario p {
     text-align: center;
     line-height: 1.2em;
-    margin: 10px 0px;
+    padding: 10px;
 }
 
-#areaMail {
-    background-color: var(--cor2);
-    padding: 10px;
+.areaForm {
+    display: block;
+    width: 100%;
+    height: 40px;
     margin-bottom: 5px;
-    margin: 5px;
+    background-color: #552ca0;
+    color: white;
+    border-radius: 10px;
 }
 
-#areaSenha {
-    background-color: var(--cor2);
-    padding: 10px;
-    margin: 5px;
+.areaForm span {
+    font-size: 2em;
+    text-align: center;
+    width: 40px;
+    height: 100%;
+    padding: 5px;
 }
 
-#submit {
-    margin: auto;
+.areaForm > input {
+    background-color: #daeedf;
+    width: calc(100% - 45px);
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--cor2);
+    padding: 5px;
+
+    transform: translateY(-12px);
+}
+
+.areaForm > input:focus-within {
+    background-color: white;
+}
+
+form > input[type="submit"] {
     display: block;
-    margin-bottom: 10px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
 }
 
-#btnForget {
+form > input[type="submit"]:hover {
+    background-color:var(--cor2);
+    border-color: white;
+    color: white;
+}
+
+form > a {
     display: block;
     margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    width: 90%;
+    height: 30px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+form > a > #btnForget {
+    font-size: 0.9em;
 }
