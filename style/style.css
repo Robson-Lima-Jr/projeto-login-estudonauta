@@ -1,7 +1,7 @@
 @charset "Utf-8";
 
 :root {
-    --cor1: #6bdb84;
+    --cor1: #4da560;
     --cor2: #552ca0;
 }
 
@@ -51,34 +51,69 @@ main {
     height: 220px;
 }
 
-#telaLogin > #formulario {
+form {
+    padding: 0px 10px;
+}
+
+#telaLogin>#formulario {
     display: block;
 }
 
-#formulario > h1 {
+#formulario>h1 {
     text-align: center;
+    font-size: 1.8em;
     color: var(--cor2);
 }
 
-div>p {
+#formulario p {
     text-align: center;
     line-height: 1.2em;
-    margin: 10px 0px;
+    padding: 10px;
 }
 
 .areaForm {
     display: block;
-    text-align: center;
+    width: 100%;
+    height: 40px;
     margin-bottom: 10px;
+    background-color: #552ca0;
+    color: white;
+    border-radius: 10px;
 }
 
-#submit {
+form > input[type="submit"] {
+    display: block;
     margin: auto;
-    display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    width: 90%;
+    height: 30px;
+    background-color: white;
+    color: #265330;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
 }
 
-#btnForget {
+form > input[type="submit"]:hover {
+    background-color:#265330;
+    color: white;
+}
+
+form > a {
     display: block;
+    margin: auto;
     text-align: center;
+    padding-top: 5px;
+    width: 90%;
+    height: 30px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+form > a > #btnForget {
+    font-size: 0.9em;
 }
