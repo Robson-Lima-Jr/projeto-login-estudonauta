@@ -55,7 +55,7 @@ main {
     display: block;
 }
 
-h1 {
+#formulario > h1 {
     text-align: center;
     color: var(--cor2);
 }
@@ -66,17 +66,10 @@ div>p {
     margin: 10px 0px;
 }
 
-#areaMail {
-    background-color: var(--cor2);
-    padding: 10px;
-    margin-bottom: 5px;
-    margin: 5px;
-}
-
-#areaSenha {
-    background-color: var(--cor2);
-    padding: 10px;
-    margin: 5px;
+.areaForm {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #submit {
@@ -87,5 +80,5 @@ div>p {
 
 #btnForget {
     display: block;
-    margin: auto;
+    text-align: center;
 }

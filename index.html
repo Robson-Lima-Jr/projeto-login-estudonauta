@@ -8,27 +8,35 @@
     <title>Desafio 15: Projeto Login</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/medias.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <section id="telaLogin">
             <div id="imagem">
+                <!-- Imagem adicionada pela CSS -->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo(a) de volta, digite seu usuário e senha para fazer seu login</p>
                 <form action="" method="post" autocomplete="on">
-                    <p id="areaMail">
-                        <label for="idmail">E-mail:</label>
-                        <input type="email" name="mail" id="idmail">
-                    </p>
-                    <p id="areaSenha">
-                        <label for="idpassword">Senha:</label>
-                        <input type="password" name="password" id="idpassword">
-                    </p>
+                    <div class="areaForm">
+                        <label for="idmail"> <span class="material-icons">
+                            account_circle
+                        </span></label>
+                        <input type="email" name="mail" id="idmail" required autocomplete="on" maxlength="30">
+                    </div>
+                    <div class="areaForm">
+                        <label for="idpassword"> <span class="material-icons">
+                            key
+                        </span></label>
+                        <input type="password" name="password" id="idpassword" required minlength="8" maxlength="20">
+                    </div>
                     <input type="submit" value="Entrar" id="submit">
-                    <input type="button" value="Esqueci a Senha" id="btnForget">
+                    <a href="forget.html" id="btnForget">Esqueci a Senha <span class="material-icons">
+                        mail
+                    </span></a>
                 </form>
             </div>
         </section>
